@@ -31,6 +31,7 @@ import Table from "@ckeditor/ckeditor5-table/src/table";
 import TableToolbar from "@ckeditor/ckeditor5-table/src/tabletoolbar";
 import TextTransformation from "@ckeditor/ckeditor5-typing/src/texttransformation";
 import Font from "@ckeditor/ckeditor5-font/src/font";
+import ChatMacros from "./plugins/ChatMacros";
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -60,17 +61,18 @@ ClassicEditor.builtinPlugins = [
   Table,
   TableToolbar,
   TextTransformation,
-  Font
+  Font,
+  ChatMacros,
 ];
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
   toolbar: {
     items: [
-	  "heading",
-	  "fontFamily",
-	  "fontColor",
-	  "fontBackgroundColor",
+      "heading",
+      "fontFamily",
+      "fontColor",
+      "fontBackgroundColor",
       "|",
       "bold",
       "italic",
@@ -78,12 +80,13 @@ ClassicEditor.defaultConfig = {
       "bulletedList",
       "numberedList",
       "|",
+      // "chatMacros",
       "imageUpload",
       "blockQuote",
       "insertTable",
       "mediaEmbed",
       "undo",
-	  "redo"
+      "redo",
     ],
   },
   image: {
