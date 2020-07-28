@@ -99,7 +99,6 @@ ClassicEditor.defaultConfig = {
       "|",
       "linkImage"
     ],
-
     styles: [
       // This option is equal to a situation where no style is applied.
       "full",
@@ -110,7 +109,7 @@ ClassicEditor.defaultConfig = {
       // This represents an image aligned to the right.
       "alignRight"
     ]
-  }
+  },
   table: {
     contentToolbar: ["tableColumn", "tableRow", "mergeTableCells"],
   },
