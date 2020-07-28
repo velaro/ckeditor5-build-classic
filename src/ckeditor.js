@@ -81,7 +81,7 @@ ClassicEditor.defaultConfig = {
       "numberedList",
       "|",
       // "chatMacros",
-      "imageUpload",
+      // "imageUpload",
       "blockQuote",
       "insertTable",
       "mediaEmbed",
